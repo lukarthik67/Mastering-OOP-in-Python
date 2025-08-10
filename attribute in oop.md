@@ -23,5 +23,7 @@ They are like **characteristics** of the object.
 - Instance attributes belong to specific objects.  
 - Class attributes are common for all objects.  
 - Attributes define **what an object has**, not **what it does**.
-
-
+-
+In OOP, methods are the ones that define what an object does.    
+Attributes → describe the data or properties of the object (what it has).  
+Methods → describe the behavior or actions of the object (what it does).  
