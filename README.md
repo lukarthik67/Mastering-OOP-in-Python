@@ -19,7 +19,7 @@ This repository contains my learning progress in **Object-Oriented Programming**
 # My OOP Learning Repository
 
 ##  Files in This Repo
-- [class_and_objects.py](class_and_objects.py.md) — Example of creating a class & object  
+- [class_and_objects.py](class_and_objects.md.py) — Example of creating a class & object  
 - [constructor_example.py](constructor_example.py) — Example using `__init__()` constructor  
 - [inheritance_example.py](inheritance_example.py) — Example of inheritance in Python  
 - [polymorphism_example.py](polymorphism_example.py) — Example of polymorphism
