@@ -4,6 +4,8 @@
 This repository contains my learning progress in **Object-Oriented Programming** (OOP) with Python.
 
 ##  Topics Covered
+![Alt text](https://media.geeksforgeeks.org/wp-content/uploads/20230818181616/Types-of-OOPS-2.gif)  
+
 - Classes & Objects
 - Encapsulation
 - Inheritance
