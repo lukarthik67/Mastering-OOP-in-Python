@@ -37,23 +37,7 @@ class ChildClass(ParentClass):
 
 ---
 
-## 1. Basic Inheritance Example  
-
-
-# Parent class  
-class Animal:  
-    def breathe(self):  
-        print("Animal is breathing")  
-
-# Child class inherits Animal  
-class Dog(Animal):  
-    def bark(self):  
-        print("Dog is barking")  
-
-# Use  
-d = Dog()  
-d.breathe()   
-d.bark()      
+     
 
 A parent class like Animal has some behaviors.  
 A child class like Dog inherits those behaviors and can add its own. 
@@ -73,16 +57,7 @@ You can add new methods or variables in the child that don’t exist in the pare
 ---
 
 ## 7. Overriding Parent Methods
-class Animal:
-    def sound(self):
-        print("Animal sound")
 
-class Dog(Animal):
-    def sound(self):
-        print("Bark")
-
-d = Dog()
-d.sound()
 
 
 You can **replace** the parent method in the child to change behavior.
@@ -90,17 +65,7 @@ You can **replace** the parent method in the child to change behavior.
 ---
 
 ## 8. Calling Parent’s Method from Child
-class Animal:
-    def sound(self):
-        print("Animal sound")
 
-class Dog(Animal):
-    def sound(self):
-        print("Dog starts:")
-        super().sound()
-
-d = Dog()
-d.sound()
 
 
 Sometimes you want to override but still use the parent’s method inside the child by explicitly calling the parent’s method.
@@ -108,18 +73,7 @@ Sometimes you want to override but still use the parent’s method inside the ch
 ---
 
 ## 9. Constructor Inheritance
- class Animal:
-    def __init__(self, name):
-        self.name = name
-
-class Dog(Animal):
-    def __init__(self, name, breed):
-        super().__init__(name)
-        self.breed = breed
-
-d = Dog("Buddy", "Labrador")
-print(d.name)
-print(d.breed)
+ 
 
 
 - Parent class usually has a constructor (initializer).  
@@ -128,22 +82,7 @@ print(d.breed)
 ---
 
 ## 10. Multilevel Inheritance (Chain of Inheritance)
-class Animal:
-    def breathe(self):
-        print("Breathing")
 
-class Dog(Animal):
-    def bark(self):
-        print("Barking")
-
-class Puppy(Dog):
-    def weep(self):
-        print("Weeping")
-
-p = Puppy()
-p.breathe()
-p.bark()
-p.weep()
 
 
 One child can become a parent for another child, forming a chain. For example, Puppy inherits from Dog, which inherits from Animal.
@@ -152,20 +91,7 @@ One child can become a parent for another child, forming a chain. For example, P
 
 ## 11. Multiple Inheritance
 
-class Flyer:
-    def fly(self):
-        print("Flying")
 
-class Swimmer:
-    def swim(self):
-        print("Swimming")
-
-class Duck(Flyer, Swimmer):
-    pass
-
-d = Duck()
-d.fly()
-d.swim()
 
 
 
