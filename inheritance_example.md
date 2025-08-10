@@ -20,16 +20,43 @@ Imagine a parent and child relationship:
 ---
 
 ## 3. Basic Syntax
+class ParentClass:  
+    # Parent class code here  
+    pass  
 
+class ChildClass(ParentClass):  
+    # Child class code here  
+    pass  
 - **Parent class** (also called base or super class) has common stuff.  
-- **Child class** (also called derived or subclass) inherits from parent.
+- **Child class** (also called derived or subclass) inherits from parent.  
 
 ---
 
-## 4. Simple Example
+## 4. Simple Example  
+
+
+---
+
+## 1. Basic Inheritance Example  
+
+
+# Parent class  
+class Animal:  
+    def breathe(self):  
+        print("Animal is breathing")  
+
+# Child class inherits Animal  
+class Dog(Animal):  
+    def bark(self):  
+        print("Dog is barking")  
+
+# Use  
+d = Dog()  
+d.breathe()   
+d.bark()      
 
 A parent class like Animal has some behaviors.  
-A child class like Dog inherits those behaviors and can add its own.
+A child class like Dog inherits those behaviors and can add its own. 
 
 ---
 
@@ -46,18 +73,54 @@ You can add new methods or variables in the child that don’t exist in the pare
 ---
 
 ## 7. Overriding Parent Methods
+class Animal:
+    def sound(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bark")
+
+d = Dog()
+d.sound()
+
 
 You can **replace** the parent method in the child to change behavior.
 
 ---
 
 ## 8. Calling Parent’s Method from Child
+class Animal:
+    def sound(self):
+        print("Animal sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog starts:")
+        super().sound()
+
+d = Dog()
+d.sound()
+
 
 Sometimes you want to override but still use the parent’s method inside the child by explicitly calling the parent’s method.
 
 ---
 
 ## 9. Constructor Inheritance
+ class Animal:
+    def __init__(self, name):
+        self.name = name
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+d = Dog("Buddy", "Labrador")
+print(d.name)
+print(d.breed)
+
 
 - Parent class usually has a constructor (initializer).  
 - Child class can call parent’s constructor to reuse initialization.
@@ -65,12 +128,46 @@ Sometimes you want to override but still use the parent’s method inside the ch
 ---
 
 ## 10. Multilevel Inheritance (Chain of Inheritance)
+class Animal:
+    def breathe(self):
+        print("Breathing")
+
+class Dog(Animal):
+    def bark(self):
+        print("Barking")
+
+class Puppy(Dog):
+    def weep(self):
+        print("Weeping")
+
+p = Puppy()
+p.breathe()
+p.bark()
+p.weep()
+
 
 One child can become a parent for another child, forming a chain. For example, Puppy inherits from Dog, which inherits from Animal.
 
 ---
 
 ## 11. Multiple Inheritance
+
+class Flyer:
+    def fly(self):
+        print("Flying")
+
+class Swimmer:
+    def swim(self):
+        print("Swimming")
+
+class Duck(Flyer, Swimmer):
+    pass
+
+d = Duck()
+d.fly()
+d.swim()
+
+
 
 A class can inherit from multiple parents simultaneously (supported in some languages like Python).
 
