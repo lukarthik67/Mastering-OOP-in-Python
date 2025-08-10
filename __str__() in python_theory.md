@@ -1,4 +1,4 @@
-# `__str__()` in Python OOP — Local Way
+# `__str__()` in Python OOP
 
 ## 1. What is `__str__()`?
 - `__str__()` is a **special method** in Python classes.
