@@ -1,4 +1,4 @@
-#  Attributes in Python (OOP)
+#  Attributes in Python (OOPs)
 
 ##  Meaning
 Attributes are data stored inside an object that describe its **state** or **properties**.  
