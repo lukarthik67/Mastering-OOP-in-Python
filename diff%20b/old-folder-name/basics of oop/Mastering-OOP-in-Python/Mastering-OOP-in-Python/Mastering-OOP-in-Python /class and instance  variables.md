@@ -7,7 +7,7 @@ and **students** as objects created from that class.
 - **Class Variable** → Something common to **all students**.  
   Example: `school_name = "ABC Public School"`
 - **Instance Variable** → Something unique to **each student**.  
-  Example: `name = "Karthik"`, `roll_no = 101`
+  Example: `name = "Karthik"`, `roll_no = 100`
 
 ---
 
