@@ -13,7 +13,7 @@ and `__str__()` as the **way they introduce themselves** when you meet them.
 
 - If they don’t have `__str__()` → they just show a random ID you can’t understand.  
 - If they have `__str__()` → they give you clear details like:  
-  `"Name: Karthik, Roll No: 101"`
+  `"Name: Karthik, Roll No: 100"`
 
 ---
 
